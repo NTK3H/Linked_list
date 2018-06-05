@@ -316,7 +316,7 @@ int list_test(list *nlist, LIST_TYPE var, int index)
 int list_clear(list *nlist)
 {
 	list_erase(nlist,0,nlist->size);
-	nlist = NULL;
+	nlist->first = NULL;
 }
 
 int list_empty(list *nlist)
