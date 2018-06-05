@@ -86,19 +86,19 @@ int list_empty(list *nlist);\
 int list_delete(list *nlist);\
 删除链表(最后会把list变量置为NULL)
 
-int list_hashlink(list *nlist, char* key, int index);\
+int list_hashlink(list *nlist, char *key, int index);\
 将链表第index个元素和key绑定
 
-int list_hashindex(list *nlist, char* key);\
+int list_hashindex(list *nlist, char *key);\
 返回与key绑定的元素index
 
 char* list_hashstring(list *nlist, int index);\
 返回与index绑定的字符串
 
-LIST_TYPE list_hashvar(list *nlist, char* key);\
+LIST_TYPE list_hashvar(list *nlist, char *key);\
 返回链表上绑定值为key的元素
 
-int list_hashdel(list *nlist, char* key);\
+int list_hashdel(list *nlist, char *key);\
 删除值为key的链表
 
 int list_hashsize(list *nlist);\
