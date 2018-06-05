@@ -11,11 +11,11 @@ list
 可以给每个节点绑定一个key,之后可以直接通过这个key访问元素\
 API里面大多数函数都和C++里的list相类似,只要用过C++那么可以很快上手
 
-# 在使用前你需要考虑两个宏
-# LIST_TYPE\
+# 在使用前你需要考虑两个宏:
+# 1.LIST_TYPE
 这个宏决定了链表操作的数据类型,比如可以: #define LIST_TYPE float
 
-# LIST_SUPPORT_HASHMAP
+# 2.LIST_SUPPORT_HASHMAP
 这个宏决定是否要启用哈希表功能,为了效率程序默认关闭对哈希表的支持\
 只要定义这个宏就开启对哈希表的支持(可以使用哈希表的API)
 
