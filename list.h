@@ -2,11 +2,10 @@
  * Author:	Truth <2568878009@qq.com>
  */
 
-#include <stdio.h>
-#include <stdlib.h>
-
 #ifndef __FN_LIST_H
 #define __FN_LIST_H
+#include <stdio.h>
+#include <stdlib.h>
 #endif
 
 #ifndef	LIST_TYPE
