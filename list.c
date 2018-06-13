@@ -185,6 +185,7 @@ int list_erase(list *nlist, int size, int index)
 			free(m);
 			m = nlist->first;
 		}
+		nlist->size-=size;
 		return 1;
 	}
 	for(int i=1;i<index;i++)
