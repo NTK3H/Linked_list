@@ -177,6 +177,16 @@ int list_erase(list *nlist, int size, int index)
 {
 	if(index>nlist->size)return 0;
 	mlist *m = nlist->first;
+	if(index == 0)
+	{
+		for(int i=0;i<size;i++)
+		{
+			nlist->first = nlist->first->next;
+			free(m);
+			m = nlist->first;
+		}
+		return 1;
+	}
 	for(int i=1;i<index;i++)
 		m = m->next;
 	mlist *m_bkf;
